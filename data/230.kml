@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<kml xmlns='http://www.opengis.net/kml/2.2'>
+	<Document>
+		<Placemark>
+			<name>Lycée Masséna</name>
+			<Point>
+				<coordinates>7.276473299999999,43.6995501,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Albert Premier</name>
+			<Point>
+				<coordinates>7.265954,43.6952454,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gambetta / Promenade</name>
+			<Point>
+				<coordinates>7.256094000000001,43.693896,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Magnan / Promenade</name>
+			<Point>
+				<coordinates>7.2450969999999995,43.690645,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Fabron / Promenade</name>
+			<Point>
+				<coordinates>7.236428000000001,43.685781,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Carras / Promenade</name>
+			<Point>
+				<coordinates>7.228883,43.677686,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Nice Parking / Promenade</name>
+			<Point>
+				<coordinates>7.228189,43.675512,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>La Vallière / Promenade</name>
+			<Point>
+				<coordinates>7.224305,43.671395000000004,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Aéroport / Promenade</name>
+			<Point>
+				<coordinates>7.2115160000000005,43.666467,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Santoline</name>
+			<Point>
+				<coordinates>7.201474,43.675647,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gambetta France</name>
+			<Point>
+				<coordinates>7.256513,43.696486,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Alsace Lorraine</name>
+			<Point>
+				<coordinates>7.256490999999999,43.698395,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Gambetta Thiers</name>
+			<Point>
+				<coordinates>7.256447999999999,43.701466,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Vernier</name>
+			<Point>
+				<coordinates>7.256298000000001,43.707082,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>PN Gambetta</name>
+			<Point>
+				<coordinates>7.256169,43.710176,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cyrnos</name>
+			<Point>
+				<coordinates>7.254194999999999,43.715131,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Deux Avenues</name>
+			<Point>
+				<coordinates>7.252114,43.719924,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Goiran</name>
+			<Point>
+				<coordinates>7.249560000000001,43.725026,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mistral</name>
+			<Point>
+				<coordinates>7.252027999999999,43.725057,0.0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Comte de Falicon</name>
+			<Point>
+				<coordinates>7.255987,43.725646,0.0</coordinates>
+			</Point>
+		</Placemark>
+	</Document>
+</kml>
