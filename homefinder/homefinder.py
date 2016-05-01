@@ -19,13 +19,29 @@ class Placemark(dict):
         for kw in keys:
             self[kw] = keywords[kw]
 
-    def type(self):
+    def get_type(self):
         """Return the type of the current :class:`Placemark` instance."""
         if 'type' in self:
             a_type = self['type']
         else:
-            a_type = 'undefined'
+            a_type = None
         return a_type
+
+    def get_coordinates(self):
+        """Return the coordinates of the current :class:`Placemark` instance."""
+        if 'coordinates' in self:
+            coords = self['coordinates']
+        else:
+            coords = None
+        return coords
+
+    def get_name(self):
+        """Return the name of the current :class:`Placemark` instance."""
+        if 'name' in self:
+            name = self['name']
+        else:
+            name = None
+        return name
 
     def __str__(self):
         """String representation."""
@@ -68,11 +84,11 @@ class Homefinder(object):
         """Retrieve all placemarks of type :param:`typename`."""
         return [pm for pm in self.placemarks if pm['type'] == typename]
 
-    def number_of(self, typename):
+    def get_number_of(self, typename):
         """Return number of placemarks of type :param:`typename`."""
         return len(self.get_by_type(typename))
 
-    def state(self):
+    def get_state(self):
         """Give the state of the current :class:`Homefinder` instance."""
         types = set([pm['type'] for pm in self.placemarks])
         return {typename: self.number_of(typename) for typename in types}
