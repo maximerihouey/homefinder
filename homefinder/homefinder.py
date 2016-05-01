@@ -28,7 +28,7 @@ class Placemark(dict):
         return a_type
 
     def get_coordinates(self):
-        """Return the coordinates of the current :class:`Placemark` instance."""
+        """Return coordinates of the current :class:`Placemark` instance."""
         if 'coordinates' in self:
             coords = self['coordinates']
         else:
