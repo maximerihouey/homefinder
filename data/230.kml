@@ -3,120 +3,140 @@
 	<Document>
 		<Placemark>
 			<name>Lycée Masséna</name>
+			<id>1</id>
 			<Point>
 				<coordinates>7.276473299999999,43.6995501,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Albert Premier</name>
+			<id>2</id>
 			<Point>
 				<coordinates>7.265954,43.6952454,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Gambetta / Promenade</name>
+			<id>3</id>
 			<Point>
 				<coordinates>7.256094000000001,43.693896,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Magnan / Promenade</name>
+			<id>4</id>
 			<Point>
 				<coordinates>7.2450969999999995,43.690645,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Fabron / Promenade</name>
+			<id>5</id>
 			<Point>
 				<coordinates>7.236428000000001,43.685781,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Carras / Promenade</name>
+			<id>6</id>
 			<Point>
 				<coordinates>7.228883,43.677686,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Nice Parking / Promenade</name>
+			<id>7</id>
 			<Point>
 				<coordinates>7.228189,43.675512,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>La Vallière / Promenade</name>
+			<id>8</id>
 			<Point>
 				<coordinates>7.224305,43.671395000000004,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Aéroport / Promenade</name>
+			<id>9</id>
 			<Point>
 				<coordinates>7.2115160000000005,43.666467,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Santoline</name>
+			<id>10</id>
 			<Point>
 				<coordinates>7.201474,43.675647,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Gambetta France</name>
+			<id>11</id>
 			<Point>
 				<coordinates>7.256513,43.696486,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Alsace Lorraine</name>
+			<id>12</id>
 			<Point>
 				<coordinates>7.256490999999999,43.698395,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Gambetta Thiers</name>
+			<id>13</id>
 			<Point>
 				<coordinates>7.256447999999999,43.701466,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Vernier</name>
+			<id>14</id>
 			<Point>
 				<coordinates>7.256298000000001,43.707082,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>PN Gambetta</name>
+			<id>15</id>
 			<Point>
 				<coordinates>7.256169,43.710176,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Cyrnos</name>
+			<id>16</id>
 			<Point>
 				<coordinates>7.254194999999999,43.715131,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Deux Avenues</name>
+			<id>17</id>
 			<Point>
 				<coordinates>7.252114,43.719924,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Goiran</name>
+			<id>18</id>
 			<Point>
 				<coordinates>7.249560000000001,43.725026,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Mistral</name>
+			<id>19</id>
 			<Point>
 				<coordinates>7.252027999999999,43.725057,0.0</coordinates>
 			</Point>
 		</Placemark>
 		<Placemark>
 			<name>Comte de Falicon</name>
+			<id>20</id>
 			<Point>
 				<coordinates>7.255987,43.725646,0.0</coordinates>
 			</Point>
