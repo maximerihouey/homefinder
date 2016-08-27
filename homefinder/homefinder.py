@@ -71,7 +71,7 @@ class Homefinder(object):
         """Add apartments from a file."""
         with open(filepath, 'r') as inputfile:
             data = json.load(inputfile)
-            for pm in data:
+            for pm in data['docs']:
                 self.add(Placemark(type='apartment',
                                    id=pm.id,
                                    coordinates=[pm.latitude, pm.longitude, 0.],
@@ -87,19 +87,23 @@ class Homefinder(object):
         with open(filepath, 'r') as inputfile:
             data = json.load(inputfile)
             for pm in data['docs']:
-                lat, lon = pm['geometry']['coordinates']
+                latitude, longitude = pm['geometry']['coordinates']
                 self.add(Placemark(type='velobleu_station',
                                    id=int(pm['IDENT']),
-                                   coordinates=[lat, lon, 0.0]))
+                                   size=int(pm['NBR_PT_ACC']),
+                                   coordinates=[latitude, longitude, 0.0]))
 
     def import_bus_stations(self, filepath):
         """Add bus stations from a file."""
         with open(filepath, 'r') as inputfile:
             doc = xmltodict.parse(inputfile.read())
-        for pm in doc['kml']['Document']['Placemark']:
-            coords = [float(a) for a in pm['Point']['coordinates'].split(',')]
-            self.add(Placemark(type='bus_station', name=pm['name'],
-                               id=int(pm['id']), coordinates=coords))
+            for pm in doc['kml']['Document']['Placemark']:
+                coords = [float(a) for a in
+                          pm['Point']['coordinates'].split(',')]
+                self.add(Placemark(type='bus_station',
+                                   name=pm['name'],
+                                   id=int(pm['id']),
+                                   coordinates=coords))
 
     def get_by_type(self, typename):
         """Retrieve all placemarks of type :param:`typename`."""
@@ -120,7 +124,8 @@ class Homefinder(object):
         bus_stations = self.get_by_type('bus_station')
         origins = [pm['coordinates'][0:-1] for pm in apartments]
         destinations = [pm['coordinates'][0:-1] for pm in bus_stations]
-        distance_matrix = self.gmaps.distance_matrix(origins, destinations,
+        distance_matrix = self.gmaps.distance_matrix(origins,
+                                                     destinations,
                                                      mode='walking',
                                                      units='metric')
         return distance_matrix
@@ -133,7 +138,17 @@ class Homefinder(object):
     def optimize(self):
         """Find the optimal home."""
         # ToDo
-        pass
+        # First we retrieve the apartments
+        apartments = self.get_by_type('apartment')
+        results = {}
+        # k = 0
+        # For each apartment, we compute the distance_matrix to the nearest
+        # placemark of each type, and we store it in the results dictionary.
+        for aparment in apartments:
+            # foo = results[k] = {}
+            # print(foo)
+            pass
+        return results
 
     def __str__(self):
         """String representation."""

@@ -1,0 +1,36 @@
+{
+  "docs":[
+    {
+      "id":1,
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          7.29039162,
+          43.7227177
+        ]
+      },
+      "rent":0,
+      "surface":0,
+      "extra_costs":0,
+      "info":"Information 1",
+      "ref":"Reference number 1",
+      "url":"http://localhost/2"
+    },
+    {
+      "id":2,
+      "geometry":{
+        "type":"Point",
+        "coordinates":[
+          7.29939162,
+          43.7227177
+        ]
+      },
+      "rent":0,
+      "surface":0,
+      "extra_costs":0,
+      "info":"Information 2",
+      "ref":"Reference number 2",
+      "url":"http://localhost/2"
+    }
+  ]
+}

@@ -3,6 +3,30 @@
 A simple Python module which aims at helping me finding my next apartment in
 Nice, France the optimal way.
 
+# Usage
+
+## Google Maps API token
+
+To use **Homefinder**, you need a
+[Google Maps API token](https://developers.google.com/maps/). Then, you have to
+export this token as an environment variable. For example, on UNIX-like
+systems, you can simply add
+```bash
+export HOMEFINDER_GOOGLE_API_TOKEN={api_token}
+```
+to your ``~/.bashrc`` or ``~/.zshenv.usr`` init script, by replacing
+``{api_token}`` by your own token. Do not forget to ``source`` it before using
+**Homefinder**:
+```bash
+source ~/.bashrc
+```
+
+## Importing the data
+
+Datasets examples are given in ``/data``. The description is self-explicit but
+feel free to ask for some clarification and do not hesitate to contribute by
+forking and making pull requests. :bowtie:
+
 # MIT License
 
 Copyright (c) 2016 Jaona Ramahaleo
@@ -24,4 +48,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
