@@ -1,8 +1,9 @@
 """This module aims at helping me choose my future home in an optimal way."""
 
-import os
+import gmplot
 import googlemaps
 import json
+import os
 import xmltodict
 
 
@@ -130,10 +131,15 @@ class Homefinder(object):
                                                      units='metric')
         return distance_matrix
 
-    def display_map(self):
-        """Display a map of the facilities."""
-        # ToDo
-        pass
+    def generate_map(self, filepath):
+        """Generate a map of the facilities."""
+        gmap = gmplot.GoogleMapPlotter.from_geocode("Nice", 12)
+        # WIP
+        vb = self.get_by_type('velobleu_station')
+        vb_latitudes = [pm['coordinates'][1] for pm in vb]
+        vb_longitudes = [pm['coordinates'][0] for pm in vb]
+        gmap.scatter(vb_latitudes, vb_longitudes, 'b', marker=False)
+        gmap.draw(filepath)
 
     def optimize(self):
         """Find the optimal home."""

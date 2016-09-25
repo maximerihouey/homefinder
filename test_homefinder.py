@@ -41,3 +41,5 @@ print("Vélobleu  🚲  : ", hf.get_number_of('velobleu_station'))
 print("Bus       🚌  : ", hf.get_number_of('bus_station'))
 print("Tram      🚋  : ", hf.get_number_of('tramway_station'))
 print("\n")
+
+hf.generate_map("map.html")
